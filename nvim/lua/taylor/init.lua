@@ -9,7 +9,7 @@ vim.api.nvim_create_augroup("AutoFormat", {})
 vim.api.nvim_create_autocmd(
     "BufWritePost",
     {
-        pattern = "*.cpp",
+        pattern = {"*.c", "*.h", "*.hpp", "*.cpp"},
         group = "AutoFormat",
         callback = function()
             vim.cmd("silent !clang-format -i %")            
