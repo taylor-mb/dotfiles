@@ -5,6 +5,7 @@ require("taylor.packer")
 vim.o.number = true
 vim.o.relativenumber = true
 
+-- Turn on auto-format on save for C/C++
 vim.api.nvim_create_augroup("AutoFormat", {})
 vim.api.nvim_create_autocmd(
     "BufWritePost",
@@ -17,3 +18,6 @@ vim.api.nvim_create_autocmd(
         end,
     }
 )
+
+-- Turn on auto indentation
+vim.o.autoindent = true
