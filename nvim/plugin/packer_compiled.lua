@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
