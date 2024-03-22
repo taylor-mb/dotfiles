@@ -20,6 +20,9 @@ return require('packer').startup(function(use)
   -- Treesitter (syntax highlighting and more)
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
+  -- Treesitter context (shows function/namespace context at top of window)
+  use "nvim-treesitter/nvim-treesitter-context"
+
   -- Tmux-like navigation
   use 'christoomey/vim-tmux-navigator'
 
