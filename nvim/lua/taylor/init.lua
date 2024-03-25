@@ -22,4 +22,5 @@ vim.api.nvim_create_autocmd(
 -- Turn on auto indentation
 vim.o.autoindent = true
 
-
+-- Make "p" in netrw open up vertically instead of horizontally
+vim.g.netrw_preview = 1
