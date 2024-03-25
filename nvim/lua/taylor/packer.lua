@@ -26,9 +26,6 @@ return require('packer').startup(function(use)
   -- Tmux-like navigation
   use 'christoomey/vim-tmux-navigator'
 
-  -- CoC (completion from LSP and tags)
-  use {'neoclide/coc.nvim', branch = 'release'}
-
   -- Todo comment highlighting
   use {
 	  "folke/todo-comments.nvim", 
@@ -37,4 +34,14 @@ return require('packer').startup(function(use)
 
   -- Git fugitive (:Git blame)
   use "tpope/vim-fugitive"
+
+ -- Mason 
+ use {"williamboman/mason.nvim"}
+
+ -- Native LSP config
+ use {"neovim/nvim-lspconfig"}
+
+ -- Autocomplete (nvim-cmp)
+ use "hrsh7th/nvim-cmp"
+ use "hrsh7th/cmp-nvim-lsp"
 end)

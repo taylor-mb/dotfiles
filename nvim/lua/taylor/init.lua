@@ -21,3 +21,5 @@ vim.api.nvim_create_autocmd(
 
 -- Turn on auto indentation
 vim.o.autoindent = true
+
+
