@@ -8,3 +8,6 @@ end)
 -- use telescope for looking up tags with "gt"
 -- from https://dev.to/oinak/neovim-config-from-scratch-part-ii-11k9
 vim.keymap.set('n', 'gt', builtin.tags, { desc = '[g]o to c[t]ags (telescope)', noremap = true })
+
+-- Search for open buffers with <leader>pb
+vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
