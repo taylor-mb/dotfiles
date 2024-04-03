@@ -46,4 +46,8 @@ return require("packer").startup(function(use)
 	-- Autocomplete (nvim-cmp)
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
+
+	-- Fidget (LSP status text)
+	use "j-hui/fidget.nvim"
 end)
+

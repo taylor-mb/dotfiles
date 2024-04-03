@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/taylorbauer/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/Users/taylorbauer/.local/share/nvim/site/pack/packer/start/mason.nvim",
