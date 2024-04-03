@@ -24,3 +24,7 @@ vim.o.autoindent = true
 
 -- Make "p" in netrw open up vertically instead of horizontally
 vim.g.netrw_preview = 1
+
+-- Turn on spellcheck
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
