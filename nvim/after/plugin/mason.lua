@@ -1,5 +1,6 @@
 require("mason").setup()
-require("lspconfig").clangd.setup({
+lspconfig = require("lspconfig")
+lspconfig.clangd.setup({
   -- Other settings here...
   cmd = {
     -- UNCOMMENT ONE OF THE FOLLOWING TWO CLANGD EXECUTABLE PATHS BASED ON OS, THEN UPDATE THE PATH AS SPECIFIED
@@ -11,4 +12,30 @@ require("lspconfig").clangd.setup({
     "--background-index",
     "--log=verbose",
   },
+})
+
+lspconfig.rust_analyzer.setup({
+    on_attach = function(client, bufnr)
+        vim.lsp.inlay_hint.enable(bufnr)
+    end
+    })
+lspconfig.rust_analyzer.setup({
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
 })

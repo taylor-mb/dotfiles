@@ -41,6 +41,8 @@ return require("packer").startup(function(use)
 	-- Native LSP config
 	use "neovim/nvim-lspconfig"
 
+	-- Setup lspconfig to automatically work with rust-analyzer
+	use 'simrat39/rust-tools.nvim'
 	-- Autocomplete (nvim-cmp)
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
