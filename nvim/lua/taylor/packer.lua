@@ -43,11 +43,17 @@ return require("packer").startup(function(use)
 
 	-- Setup lspconfig to automatically work with rust-analyzer
 	use 'simrat39/rust-tools.nvim'
+
 	-- Autocomplete (nvim-cmp)
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
 
 	-- Fidget (LSP status text)
 	use "j-hui/fidget.nvim"
+	
+	-- Snippets
+	use "hrsh7th/vim-vsnip"
+	use "hrsh7th/vim-vsnip-integ"
+	use "hrsh7th/cmp-vsnip"
 end)
 
