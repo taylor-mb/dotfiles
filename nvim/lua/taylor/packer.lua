@@ -55,5 +55,11 @@ return require("packer").startup(function(use)
 	use "hrsh7th/vim-vsnip"
 	use "hrsh7th/vim-vsnip-integ"
 	use "hrsh7th/cmp-vsnip"
+
+	-- Telekasten (notes based on Telescope)
+	use {
+		'renerocksai/telekasten.nvim',
+		require = {'nvim-telescope/telescope.nvim'}
+	}
 end)
 
