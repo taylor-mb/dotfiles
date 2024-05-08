@@ -61,5 +61,8 @@ return require("packer").startup(function(use)
 		'renerocksai/telekasten.nvim',
 		require = {'nvim-telescope/telescope.nvim'}
 	}
+
+	-- Github Copilot
+	use "github/copilot.vim"
 end)
 
