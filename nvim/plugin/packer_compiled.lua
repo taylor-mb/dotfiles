@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/CopilotChat.nvim",
     url = "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -98,6 +93,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
+  },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/bauertaylor/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
