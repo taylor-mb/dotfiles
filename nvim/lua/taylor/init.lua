@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd(
         pattern = {"*.c", "*.h", "*.hpp", "*.cpp"},
         group = "AutoFormat",
         callback = function()
-            vim.cmd("silent !clang-format -i %")            
+            vim.cmd("silent !garmin-clang-format -i %")            
             vim.cmd("edit")
         end,
     }
@@ -28,3 +28,5 @@ vim.g.netrw_preview = 1
 -- Turn on spellcheck
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
+
+vim.opt.clipboard="unnamedplus"
